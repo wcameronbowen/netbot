@@ -1,0 +1,257 @@
+{
+    "actions": [
+        {
+            "name": "action-101-alf",
+            "q_origin_key": "action-101-alf",
+            "action-type": "webhook",
+            "tls-certificate": "",
+            "email-to": [],
+            "email-from": "",
+            "email-subject": "",
+            "email-body": "%%log%%",
+            "minimum-interval": 0,
+            "delay": 0,
+            "required": "disable",
+            "aws-api-id": "",
+            "aws-region": "",
+            "aws-domain": "amazonaws.com",
+            "aws-api-stage": "",
+            "aws-api-path": "",
+            "aws-api-key": "",
+            "azure-app": "",
+            "azure-function": "",
+            "azure-domain": "azurewebsites.net",
+            "azure-function-authorization": "anonymous",
+            "azure-api-key": "",
+            "gcp-function-region": "",
+            "gcp-project": "",
+            "gcp-function-domain": "cloudfunctions.net",
+            "gcp-function": "",
+            "alicloud-account-id": "",
+            "alicloud-region": "",
+            "alicloud-function-domain": "fc.aliyuncs.com",
+            "alicloud-version": "",
+            "alicloud-service": "",
+            "alicloud-function": "",
+            "alicloud-function-authorization": "anonymous",
+            "alicloud-access-key-id": "",
+            "alicloud-access-key-secret": "",
+            "protocol": "https",
+            "method": "post",
+            "uri": "webhook.site",
+            "http-body": "{}",
+            "port": 443,
+            "headers": [
+                {
+                    "header": "content-type:application/json",
+                    "q_origin_key": "content-type:application/json"
+                }
+            ],
+            "script": "",
+            "accprofile": "",
+            "security-tag": "",
+            "sdn-connector": []
+        },
+        {
+            "name": "action-101-als",
+            "q_origin_key": "action-101-als",
+            "action-type": "webhook",
+            "tls-certificate": "",
+            "email-to": [],
+            "email-from": "",
+            "email-subject": "",
+            "email-body": "%%log%%",
+            "minimum-interval": 0,
+            "delay": 0,
+            "required": "disable",
+            "aws-api-id": "",
+            "aws-region": "",
+            "aws-domain": "amazonaws.com",
+            "aws-api-stage": "",
+            "aws-api-path": "",
+            "aws-api-key": "",
+            "azure-app": "",
+            "azure-function": "",
+            "azure-domain": "azurewebsites.net",
+            "azure-function-authorization": "anonymous",
+            "azure-api-key": "",
+            "gcp-function-region": "",
+            "gcp-project": "",
+            "gcp-function-domain": "cloudfunctions.net",
+            "gcp-function": "",
+            "alicloud-account-id": "",
+            "alicloud-region": "",
+            "alicloud-function-domain": "fc.aliyuncs.com",
+            "alicloud-version": "",
+            "alicloud-service": "",
+            "alicloud-function": "",
+            "alicloud-function-authorization": "anonymous",
+            "alicloud-access-key-id": "",
+            "alicloud-access-key-secret": "",
+            "protocol": "https",
+            "method": "post",
+            "uri": "webhook.site",
+            "http-body": "{}",
+            "port": 443,
+            "headers": [
+                {
+                    "header": "content-type:application/json",
+                    "q_origin_key": "content-type:application/json"
+                }
+            ],
+            "script": "",
+            "accprofile": "",
+            "security-tag": "",
+            "sdn-connector": []
+        },
+        {
+            "name": "action-101-cc",
+            "q_origin_key": "action-101-cc",
+            "action-type": "webhook",
+            "tls-certificate": "",
+            "email-to": [],
+            "email-from": "",
+            "email-subject": "",
+            "email-body": "%%log%%",
+            "minimum-interval": 0,
+            "delay": 0,
+            "required": "disable",
+            "aws-api-id": "",
+            "aws-region": "",
+            "aws-domain": "amazonaws.com",
+            "aws-api-stage": "",
+            "aws-api-path": "",
+            "aws-api-key": "",
+            "azure-app": "",
+            "azure-function": "",
+            "azure-domain": "azurewebsites.net",
+            "azure-function-authorization": "anonymous",
+            "azure-api-key": "",
+            "gcp-function-region": "",
+            "gcp-project": "",
+            "gcp-function-domain": "cloudfunctions.net",
+            "gcp-function": "",
+            "alicloud-account-id": "",
+            "alicloud-region": "",
+            "alicloud-function-domain": "fc.aliyuncs.com",
+            "alicloud-version": "",
+            "alicloud-service": "",
+            "alicloud-function": "",
+            "alicloud-function-authorization": "anonymous",
+            "alicloud-access-key-id": "",
+            "alicloud-access-key-secret": "",
+            "protocol": "https",
+            "method": "post",
+            "uri": "webhook.site",
+            "http-body": "{}",
+            "port": 443,
+            "headers": [
+                {
+                    "header": "content-type:application/json",
+                    "q_origin_key": "content-type:application/json"
+                }
+            ],
+            "script": "",
+            "accprofile": "",
+            "security-tag": "",
+            "sdn-connector": []
+        }
+    ],
+    "triggers": [
+        {
+            "name": "admin login failed",
+            "q_origin_key": "admin login failed",
+            "trigger-type": "event-based",
+            "event-type": "event-log",
+            "license-type": "forticare-support",
+            "ioc-level": "high",
+            "logid": 32002,
+            "trigger-frequency": "daily",
+            "trigger-weekday": "",
+            "trigger-day": 1,
+            "trigger-hour": 0,
+            "trigger-minute": 0,
+            "fields": [],
+            "faz-event-name": "",
+            "faz-event-severity": "",
+            "faz-event-tags": ""
+        },
+        {
+            "name": "admin login successful",
+            "q_origin_key": "admin login successful",
+            "trigger-type": "event-based",
+            "event-type": "event-log",
+            "license-type": "forticare-support",
+            "ioc-level": "high",
+            "logid": 32001,
+            "trigger-frequency": "daily",
+            "trigger-weekday": "",
+            "trigger-day": 1,
+            "trigger-hour": 0,
+            "trigger-minute": 0,
+            "fields": [],
+            "faz-event-name": "",
+            "faz-event-severity": "",
+            "faz-event-tags": ""
+        },
+        {
+            "name": "configuration changed",
+            "q_origin_key": "configuration changed",
+            "trigger-type": "event-based",
+            "event-type": "event-log",
+            "license-type": "forticare-support",
+            "ioc-level": "high",
+            "logid": 32102,
+            "trigger-frequency": "daily",
+            "trigger-weekday": "",
+            "trigger-day": 1,
+            "trigger-hour": 0,
+            "trigger-minute": 0,
+            "fields": [],
+            "faz-event-name": "",
+            "faz-event-severity": "",
+            "faz-event-tags": ""
+        }
+    ],
+    "stitches": [
+        {
+            "name": "admin login failed",
+            "q_origin_key": "admin login failed",
+            "status": "enable",
+            "trigger": "admin login failed",
+            "action": [
+                {
+                    "name": "action-101-alf",
+                    "q_origin_key": "action-101-alf"
+                }
+            ],
+            "destination": []
+        },
+        {
+            "name": "admin login successful",
+            "q_origin_key": "admin login successful",
+            "status": "enable",
+            "trigger": "admin login successful",
+            "action": [
+                {
+                    "name": "action-101-als",
+                    "q_origin_key": "action-101-als"
+                }
+            ],
+            "destination": []
+        },
+        {
+            "name": "configuration changed",
+            "q_origin_key": "configuration changed",
+            "status": "enable",
+            "trigger": "configuration changed",
+            "action": [
+                {
+                    "name": "action-101-cc",
+                    "q_origin_key": "action-101-cc"
+                }
+            ],
+            "destination": []
+        }
+    ]
+}
