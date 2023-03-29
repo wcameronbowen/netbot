@@ -1,0 +1,24 @@
+# ansible-inventory -v --list -i inventory-new.yml
+# ansible-playbook -i inventory-new.yml change-hostname.yml
+
+---
+- name: Preconfigure fortigate
+  hosts: fortigates
+  vars:
+    ansible_httpapi_port: 443
+  tasks:
+      - name: Check if https at 443
+        ansible.builtin.uri:
+           url: https://192.168.1.99:443
+           validate_certs: false
+        register: https_result
+
+      - name: Configure global attributes.
+        fortinet.fortios.fortios_system_global:
+           vdom: "{{ vdom }}"
+           # access_token: "{{ fortios_access_token }}" #if you prefer access token based authentication, add this line.
+           system_global:
+              hostname: "{{ fgt_hostname }}"
+              admin_sport: "{{ https_mgmt_port }}"
+              admin_port: "{{ http_mgmt_port }}"
+        when: https_result.status == 200
